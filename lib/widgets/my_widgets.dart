@@ -22,7 +22,7 @@ Widget myelevatedButton(
           fontFamily: 'inter'),
     ),
     style: ElevatedButton.styleFrom(
-      primary: color,
+      foregroundColor: color,
       minimumSize: Size(343, 56),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),

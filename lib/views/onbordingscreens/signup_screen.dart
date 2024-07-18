@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:montra_expense_tracker/database/firebase_serices.dart';
+
 import 'package:montra_expense_tracker/utils/app_color.dart';
 import 'package:get/get.dart';
 import 'package:montra_expense_tracker/views/onbordingscreens/emailverification_screen.dart';
@@ -103,13 +103,7 @@ class _SignupScreenState extends State<SignupScreen> {
           SizedBox(height: 20),
           myelevatedButton(
               text: "Sign Up",
-              onPressed: () {
-                FirebaseService firebaseService = FirebaseService();
-                firebaseService.signUpWithEmail(
-                    emailController.text, passwordController.text);
-
-                // Get.to(() => EmailVerificationScreen());
-              },
+              onPressed: () {},
               textColor: AppColors.Light100,
               color: AppColors.Violet100),
           SizedBox(height: 20),
